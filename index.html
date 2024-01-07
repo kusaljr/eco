@@ -55,6 +55,8 @@
   </head>
 
   <body>
+    <div id="google_translate_element"></div>
+
     <!-- start preloader area -->
     <div class="preloader">
       <div class="preloader-inner">
@@ -95,7 +97,8 @@
                         <a href="index.html">home</a>
                       </li>
                       <li><a href="project.html">Test Report</a></li>
-
+                      <li><a href="project.html">Interviews/Videos</a></li>
+                      <li><a href="news.html">News Publication</a></li>
                       <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                   </div>
@@ -437,14 +440,14 @@
             <div class="media" data-aos="zoom-in-right">
               <picture>
                 <source
-                  data-srcset="/assets/images/eco/3hole.webp"
-                  srcset="/assets/images/eco/3hole.webp"
+                  data-srcset="/assets/images/eco/photo5.jpeg"
+                  srcset="/assets/images/eco/photo5.jpeg"
                   type="image/webp"
                 />
                 <img
                   class="lazy"
-                  data-src="/assets/images/eco/3hole.webp"
-                  src="/assets/images/eco/3hole.webp"
+                  data-src="/assets/images/eco/photo5.jpeg"
+                  src="/assets/images/eco/photo5.jpeg"
                   alt="Fresh Concept Construction Renovation"
                 />
               </picture>
@@ -1057,5 +1060,21 @@
 
     <!-- script -->
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </body>
 </html>
